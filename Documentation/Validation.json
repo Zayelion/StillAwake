@@ -1,0 +1,14 @@
+{
+  "checkedAtUtc": "2026-11-07T00:25:48.7249745Z",
+  "unrealVersion": "5.8.2",
+  "contentValidation": "Passed: 32 anomalies, eight rooms, six story fragments",
+  "nativeRules": {
+    "passed": 38,
+    "failed": 0
+  },
+  "editorCompile": "Passed",
+  "gameCompile": "Passed: final source compiled and linked with MSVC using UnrealBuildTool-generated response files",
+  "runtimeTests": "Blocked before engine initialization",
+  "packagedPlayer": "Not produced",
+  "blocker": "Unreal startup: MachineId registry write denied (Windows error 5), followed by access violation in UnrealEditor-Core.dll"
+}

@@ -1,0 +1,15 @@
+// Copy to depot_build_windows.local.vdf; match the ID in the app build.
+"DepotBuild"
+{
+    "DepotID" "YOUR_WINDOWS_DEPOT_ID"
+    "FileMapping"
+    {
+        "LocalPath" "*"
+        "DepotPath" "."
+        "Recursive" "1"
+    }
+    "FileExclusion" "*.pdb"
+    "FileExclusion" "*.log"
+    "FileExclusion" "*.dmp"
+    "FileExclusion" "steam_appid.txt"
+}

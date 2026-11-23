@@ -1,0 +1,376 @@
+{
+  "anomalies": [
+    {
+      "anomalyId": "ANOM_FOYER_CATS",
+      "displayName": "Both paintings show black cats",
+      "routeIndex": 1,
+      "targetId": "foyer.whitecat",
+      "effect": 6,
+      "value": [
+        0.012,
+        0.014,
+        0.018
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_FOYER_BOOK",
+      "displayName": "Blue book missing",
+      "routeIndex": 1,
+      "targetId": "foyer.book",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 0,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_FOYER_COAT",
+      "displayName": "Yellow raincoat on hooks",
+      "routeIndex": 1,
+      "targetId": "foyer.raincoat",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_LIVING_TV",
+      "displayName": "Static and wake up message",
+      "routeIndex": 2,
+      "targetId": "living.static",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_LIVING_CAT",
+      "displayName": "Sleeping black cat",
+      "routeIndex": 2,
+      "targetId": "living.cat",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_LIVING_WINDOW",
+      "displayName": "Window slightly open",
+      "routeIndex": 2,
+      "targetId": "living.window",
+      "effect": 1,
+      "value": [
+        0,
+        12,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_KITCHEN_WATER",
+      "displayName": "Running faucet",
+      "routeIndex": 3,
+      "targetId": "kitchen.water",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_KITCHEN_DISHES",
+      "displayName": "Empty sink",
+      "routeIndex": 3,
+      "targetId": "kitchen.dishes",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 0,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_KITCHEN_FRIDGE",
+      "displayName": "Fridge ajar",
+      "routeIndex": 3,
+      "targetId": "kitchen.fridgeDoor",
+      "effect": 1,
+      "value": [
+        0,
+        17,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_KITCHEN_MAGNETS",
+      "displayName": "Magnets on fridge",
+      "routeIndex": 3,
+      "targetId": "kitchen.magnets",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_UPSTAIRS_BATH_TOWEL",
+      "displayName": "Crimson towel in the hall bathroom",
+      "routeIndex": 4,
+      "targetId": "upstairs.bath.towel",
+      "effect": 6,
+      "value": [
+        0.56,
+        0.014,
+        0.031
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_UPSTAIRS_CHILD_DOLL",
+      "displayName": "Doll faces the wall",
+      "routeIndex": 5,
+      "targetId": "upstairs.child.doll",
+      "effect": 1,
+      "value": [
+        0,
+        180,
+        0
+      ],
+      "enabledState": 1,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_UPSTAIRS_MASTER_PHOTO",
+      "displayName": "Family photo missing from the master bedroom",
+      "routeIndex": 6,
+      "targetId": "upstairs.master.photo",
+      "effect": 3,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "enabledState": 0,
+      "tier": 1,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    },
+    {
+      "anomalyId": "ANOM_CHILD_DRAWING_DOWNSTAIRS",
+      "displayName": "The drawing from upstairs hangs in the kitchen",
+      "routeIndex": 3,
+      "targetId": "upstairs.child.drawing",
+      "effect": 0,
+      "value": [1.03, -3.18, 6.34],
+      "enabledState": 1,
+      "tier": 3,
+      "minProgress": 0,
+      "selectionWeight": 1,
+      "replacementText": ""
+    }
+  ],
+  "inspectableTargets": [
+    "foyer.whitecat",
+    "foyer.blackcat",
+    "foyer.clock",
+    "foyer.raincoat",
+    "living.static",
+    "living.cat",
+    "living.window",
+    "living.fixedWindow",
+    "kitchen.water",
+    "kitchen.dishes",
+    "kitchen.fridgeDoor",
+    "kitchen.table",
+    "upstairs.bath.towel",
+    "upstairs.bath.toilet",
+    "upstairs.child.doll",
+    "upstairs.child.drawing",
+    "upstairs.child.desk",
+    "upstairs.master.photo",
+    "upstairs.master.dresser"
+  ],
+  "hunts": [
+    {
+      "anomalyIds": ["ANOM_FOYER_CATS", "ANOM_LIVING_TV", "ANOM_KITCHEN_WATER", "ANOM_UPSTAIRS_BATH_TOWEL"],
+      "sleepPressure": 1,
+      "startLine": "I left the house ready for bed. I just want to check.",
+      "sleepLine": "I thought I heard the closet latch."
+    },
+    {
+      "anomalyIds": ["ANOM_FOYER_COAT", "ANOM_LIVING_CAT", "ANOM_KITCHEN_FRIDGE", "ANOM_UPSTAIRS_CHILD_DOLL"],
+      "sleepPressure": 1.04,
+      "startLine": "I remember leaving the hall light on for you.",
+      "sleepLine": "There it is again. The hinge sounds closer now."
+    },
+    {
+      "anomalyIds": ["ANOM_LIVING_WINDOW", "ANOM_KITCHEN_DISHES", "ANOM_UPSTAIRS_MASTER_PHOTO", "ANOM_CHILD_DRAWING_DOWNSTAIRS"],
+      "sleepPressure": 1.08,
+      "startLine": "I put the drawing back upstairs. I remember the tack under my thumb.",
+      "sleepLine": "I can hear the house from here. I think I'll stay."
+    }
+  ],
+  "sleepProfiles": [
+    {
+      "name": "gentle",
+      "anxietyRiseRate": 0.085,
+      "anxietyRecoveryRate": 0.155,
+      "closetAdvanceRate": 0.095,
+      "closetRetreatRate": 0.24,
+      "anxietyFailureThreshold": 1,
+      "closetFailureThreshold": 1,
+      "warningSeconds": 2,
+      "sleepDuration": 16
+    },
+    {
+      "name": "manageable",
+      "anxietyRiseRate": 0.10,
+      "anxietyRecoveryRate": 0.14,
+      "closetAdvanceRate": 0.115,
+      "closetRetreatRate": 0.22,
+      "anxietyFailureThreshold": 1,
+      "closetFailureThreshold": 1,
+      "warningSeconds": 1.8,
+      "sleepDuration": 18
+    },
+    {
+      "name": "pressured",
+      "anxietyRiseRate": 0.115,
+      "anxietyRecoveryRate": 0.1275,
+      "closetAdvanceRate": 0.132,
+      "closetRetreatRate": 0.21,
+      "anxietyFailureThreshold": 1,
+      "closetFailureThreshold": 1,
+      "warningSeconds": 1.5,
+      "sleepDuration": 19
+    },
+    {
+      "name": "severe",
+      "anxietyRiseRate": 0.128,
+      "anxietyRecoveryRate": 0.115,
+      "closetAdvanceRate": 0.149,
+      "closetRetreatRate": 0.201,
+      "anxietyFailureThreshold": 1,
+      "closetFailureThreshold": 1,
+      "warningSeconds": 1.2,
+      "sleepDuration": 20
+    },
+    {
+      "name": "extreme",
+      "anxietyRiseRate": 0.14,
+      "anxietyRecoveryRate": 0.105,
+      "closetAdvanceRate": 0.162,
+      "closetRetreatRate": 0.195,
+      "anxietyFailureThreshold": 1,
+      "closetFailureThreshold": 1,
+      "warningSeconds": 1,
+      "sleepDuration": 21
+    }
+  ],
+  "story": [
+    {
+      "fragmentId": "journal_arrival",
+      "title": "A familiar house",
+      "unlockAfterRounds": 0.0,
+      "text": "I came back because I thought I would sleep here.\n\nThe curtains are drawn. The stove is off. There are clean dishes in the sink.\n\nMake one circuit. Leave a Fix it note where something has changed. Then go to bed."
+    },
+    {
+      "fragmentId": "journal_counting",
+      "title": "Counting",
+      "unlockAfterRounds": 0.0,
+      "text": "A white cat and a black cat in the foyer. A pale towel on the rail. A doll facing the room.\n\nI wrote these things down so that I would not have to remember. Now I cannot remember writing them."
+    },
+    {
+      "fragmentId": "journal_letter",
+      "title": "The letter",
+      "unlockAfterRounds": 1.0,
+      "text": "You said the house would feel smaller when I came home.\n\nYou were wrong about that.\n\nThere is still a place set for you. I keep telling myself that is ordinary."
+    },
+    {
+      "fragmentId": "journal_clock",
+      "title": "Three minutes",
+      "unlockAfterRounds": 1.0,
+      "text": "The clock has not moved. I have.\n\nWhen I come up the stairs, I hear someone settle in the room beyond the landing. I keep my hand on the railing until the sound passes."
+    },
+    {
+      "fragmentId": "journal_handwriting",
+      "title": "In my handwriting",
+      "unlockAfterRounds": 2.0,
+      "text": "I found another list under the lamp. It says I can stop looking.\n\nIt is in my handwriting. I don't remember leaving it there."
+    },
+    {
+      "fragmentId": "journal_morning",
+      "title": "The window",
+      "unlockAfterRounds": 3.0,
+      "text": "There is a pale line beneath the curtain.\n\nMaybe morning has been waiting outside all this time. Maybe it is only the streetlight.\n\nI would like to sleep without knowing."
+    }
+  ],
+  "endingLine": "At dawn I heard the pipes settle. I left my slippers beside the bed.",
+  "walkSpeed": 300
+}

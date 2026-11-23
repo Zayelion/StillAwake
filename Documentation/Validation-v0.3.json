@@ -1,0 +1,57 @@
+{
+  "version": "0.3.0",
+  "checkedAtUtc": "2026-11-10T01:31:48.194562+00:00",
+  "nativeChecks": {
+    "passed": 38,
+    "failed": 0
+  },
+  "editorCompile": {
+    "passed": true,
+    "run": "20261109-203030-7e3ca34c"
+  },
+  "shippingCompile": {
+    "passed": true,
+    "method": "MSVC with UBT-generated Shipping response files; all ten units compiled, final house and UTF-8 HUD recompiled, executable linked",
+    "logRun": "20261109-201911-76b49602",
+    "binarySha256": "48f6f5ed5ecb9b8e3e8af8ff884d225acf7d65b58edaf58533083d799a163bc6"
+  },
+  "fullBuild": {
+    "passed": false,
+    "run": "20261109-201715-0bfbcc69",
+    "failedStage": "prepare-content",
+    "reason": "Engine startup before content-ready marker; MachineId registry read denied"
+  },
+  "unrealAutomation": "Not run successfully",
+  "physicalSmoke": {
+    "implementedChecks": 44,
+    "status": "Not run successfully"
+  },
+  "cookedPlayer": "Not produced for v0.3",
+  "visualAudioPlaytest": "Not performed",
+  "preservedUserInputConfiguration": true,
+  "changedExistingFiles": [
+    "Source/StillAwake/SAAudio.cpp",
+    "Source/StillAwake/SAAudio.h",
+    "Source/StillAwake/SACharacter.cpp",
+    "Source/StillAwake/SACharacter.h",
+    "Source/StillAwake/SAData.cpp",
+    "Source/StillAwake/SAData.h",
+    "Source/StillAwake/SAGameMode.cpp",
+    "Source/StillAwake/SAGameMode.h",
+    "Source/StillAwake/SAHouse.cpp",
+    "Source/StillAwake/SAHouse.h",
+    "Source/StillAwake/SAHUD.cpp",
+    "Source/StillAwake/SASmokeTest.cpp",
+    "Source/StillAwake/SATests.cpp",
+    "Source/StillAwake/Core/SARuleChecks.h",
+    "Source/StillAwake/Core/SARules.h",
+    "Config/DefaultGame.ini",
+    "Content/Data/content.json",
+    "Tools/Prepare-Content.py",
+    "Tools/Verify-Project.py",
+    "Documentation/Build-Runbook.md",
+    "Build.ps1",
+    "README.md"
+  ],
+  "textVerification": "Passed: exact ending wording/UTF-8 and removed caption"
+}

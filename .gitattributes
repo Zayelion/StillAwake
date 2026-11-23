@@ -1,0 +1,31 @@
+# Normalize source text; Windows command scripts need CRLF.
+* text=auto
+*.md text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.cs text eol=lf
+*.py text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.ini text eol=lf
+*.uproject text eol=lf
+*.uplugin text eol=lf
+*.yml text eol=lf
+*.vdf text eol=lf
+*.ps1 text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Store Unreal packages and source media as ordinary Git binaries.
+*.uasset binary
+*.umap binary
+*.ubulk binary
+*.fbx binary
+*.blend binary
+*.psd binary
+*.png binary
+*.tga binary
+*.exr binary
+*.wav binary
+*.ogg binary
+*.mp4 binary

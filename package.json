@@ -1,0 +1,11 @@
+{
+  "name": "still-awake",
+  "private": true,
+  "description": "Local Unreal Engine build commands; game version lives in Config/DefaultGame.ini",
+  "scripts": {
+    "build": "node Tools/Build-Windows.cjs",
+    "build:shipping": "node Tools/Build-Windows.cjs --shipping",
+    "build:editor": "node Tools/Build-Windows.cjs --compile",
+    "test": "node Tools/Build-Windows.cjs --validate"
+  }
+}

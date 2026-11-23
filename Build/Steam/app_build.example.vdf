@@ -1,0 +1,14 @@
+// Copy to app_build.local.vdf and replace the placeholders before use.
+"AppBuild"
+{
+    "AppID"         "YOUR_APP_ID"
+    "Desc"          "YOUR_BUILD_DESCRIPTION"
+    "ContentRoot"   "../../Builds/Steam/Windows"
+    "BuildOutput"   "../../Saved/SteamPipe"
+    "Preview"       "1"
+    "SetLive"       ""
+    "Depots"
+    {
+        "YOUR_WINDOWS_DEPOT_ID" "depot_build_windows.local.vdf"
+    }
+}

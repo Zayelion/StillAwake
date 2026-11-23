@@ -1,0 +1,80 @@
+name: Still Awake Unreal build
+
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: Windows player configuration
+        type: choice
+        options: [Shipping, Development]
+        default: Shipping
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Validate source and pipeline
+        id: pipeline
+        run: .\Build.ps1 -Task Validate
+      - name: Preserve validation diagnostics
+        if: always() && steps.pipeline.outputs.log-directory != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.pipeline.outputs.log-directory }}
+          retention-days: 14
+
+  windows:
+    needs: validate
+    if: github.event_name != 'pull_request' && vars.STILL_AWAKE_WINDOWS_CI == 'true'
+    runs-on: [self-hosted, Windows, X64, unreal-5.8]
+    timeout-minutes: 90
+    concurrency:
+      group: still-awake-windows-build
+      cancel-in-progress: false
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      BUILD_CONFIGURATION: ${{ inputs.configuration || 'Shipping' }}
+      STILL_AWAKE_UNREAL_ENGINE: ${{ vars.STILL_AWAKE_UNREAL_ENGINE }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Test, build and package Windows player
+        id: pipeline
+        run: .\Build.ps1 -Configuration $env:BUILD_CONFIGURATION -TimeoutSeconds 3600
+      - name: Preserve build diagnostics
+        if: always() && steps.pipeline.outputs.log-directory != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: windows-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.pipeline.outputs.log-directory }}
+          retention-days: 14
+      - name: Upload Windows package
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: StillAwake-Windows-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.pipeline.outputs.artifact-directory }}
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
