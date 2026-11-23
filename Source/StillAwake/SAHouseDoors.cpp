@@ -31,7 +31,7 @@ struct FSwingBox
 };
 
 // Cover the slab, raised panels and handles of the room door.
-const FSwingBox Parts[] = {
+const FSwingBox DoorSwingBoxes[] = {
     {{0, LeafLength / 2, 104}, {2, LeafLength / 2, 103}},
     {{0, 48, 55}, {3.6, 36.5, 40}},
     {{0, 48, 151}, {3.6, 36.5, 40}},
@@ -45,7 +45,7 @@ bool CanSwingThrough(const UWorld &World, const FTransform &Closed, double From,
     const double HalfArc = FMath::DegreesToRadians(FMath::Abs(To - From) * .5);
     const double Sine = FMath::Sin(HalfArc);
     const double Inset = 1. - FMath::Cos(HalfArc);
-    for (const FSwingBox &Part : Parts)
+    for (const FSwingBox &Part : DoorSwingBoxes)
     {
         // A rotational sweep needs to cover the arc between poses, including during a long frame.
         const double Radius = Part.Center.Y + Part.Extent.Y;
